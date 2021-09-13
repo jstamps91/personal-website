@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDisqusComments from 'react-disqus-comments'
+//import ReactDisqusComments from 'react-disqus-comments'
 import styled from 'styled-components'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 
@@ -20,7 +20,6 @@ const Disqus = ({ title, path }) => {
 
   return (
     <Container>
-      <ReactDisqusComments shortname={disqusShortname} identifier={path} title={title} url={url} />
     </Container>
   )
 }
