@@ -1,54 +1,56 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Joshua Stamps Personal Website
+<!-- [![CircleCI](https://circleci.com/gh/jstamps91/jstamps.com.svg?style=svg)](https://circleci.com/gh/jstamps91/jstamps.com) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2b2a92f6-3281-47c5-b2bb-252235f364f5/deploy-status)](https://app.netlify.com/sites/jstamps91/deploys)
+[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/jstamps-dev/stack)
 
-## 🚀 Quick start
+Code of my personal static website were I write about Node, JS/Typescript, Java, Backend development and more.
 
-1.  **Create a Gatsby site.**
+![Screenshot](./content/images/jstamps-home.png)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Deployed at: https://jstamps.dev
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
 
-2.  **Start developing.**
+## Commands
 
-    Navigate into your new site’s directory and start it up.
+* `yarn create`.- Launch an interactive CLI to help to create a new blog post.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## 💪 Powered by:
 
-3.  **Open the code and start customizing!**
+* Built with [Gatsby](https://www.gatsbyjs.com/)
+* Hosted in [Netlify](https://www.netlify.com/)
 
-    Your site is now running at http://localhost:8000!
+See complete stack in [StackShare](https://stackshare.io/jstamps-dev/stack)
 
-    Edit `src/pages/index.js` to see your site update in real-time!
 
-4.  **Learn more**
+## 💡 Features:
+* [Blog](https://jstamps.dev/blog)
+* [Portfolio](https://jstamps.dev/portfolio)
+* [Dynamic status section](https://jstamps.dev/) supported via [my API](https://github.com/jstamps91/jstamps.dev-api):
+  - Github Status
+  - Contributions in last year
+  - Latest commit
+  - Listening
+* [Tech Stack Section](https://jstamps.dev/#my-stack)
+* Share Post buttons
+* TypeScript support
+* [Page for ech Tag](https://jstamps.dev/blog/tags/backend)
+* Comments supported by [Disqus](https://disqus.com/)
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 🚀 Run
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Install packages
+```bash
+yarn
+```
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+And run:
+```bash
+yarn start
+```
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 💱 Changelog
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## ⚖️ License
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+[MIT](./LICENSE)
