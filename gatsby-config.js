@@ -12,12 +12,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require('node-sass'),
-      },
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
