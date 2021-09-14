@@ -1,0 +1,14 @@
+"use strict";(self.webpackChunkpersonal_website=self.webpackChunkpersonal_website||[]).push([[953],{5212:function(e,t,a){var i=a(5444),n=a(2359),o=a(7294),d=a(9),l=a(1984);const r=(0,d.ZP)(i.Link).withConfig({displayName:"Card__Container",componentId:"sc-15boh00-0"})(["& > div{display:flex;align-items:center;text-align:left;flex-direction:column;border-bottom:1px solid rgb(221,221,221);padding:2rem 0px;"," *{margin:0;}}&:first-child{& > div{border-top:1px solid rgb(221,221,221);}}text-decoration:none;"],l.BC.md`
+      flex-direction: row;
+    `),m=d.ZP.div.withConfig({displayName:"Card__ImageWrapper",componentId:"sc-15boh00-1"})(["border-radius:4px;overflow:hidden;width:100%;max-width:500px;",";"],l.BC.md`
+    width: 25%;
+  `),p=d.ZP.div.withConfig({displayName:"Card__Info",componentId:"sc-15boh00-2"})(["width:100%;max-width:560px;padding-top:12px;",";"],l.BC.md`
+    padding: 0 0 0 50px;
+    width: 75%;
+    max-width: 100%;
+  `),s=d.ZP.h3.withConfig({displayName:"Card__Title",componentId:"sc-15boh00-3"})(["font-family:'Open Sans',sans-serif;color:#282a2d;transition:0.3s;font-size:17px;"," ",":hover &{color:#1976d2;}"],l.BC.sm`
+    font-size: 1.1rem;
+  `,r),c=d.ZP.p.withConfig({displayName:"Card__Time",componentId:"sc-15boh00-4"})(["color:#757575;font-size:14px;text-align:right;padding:6px 6px 6px;"]),g=d.ZP.p.withConfig({displayName:"Card__Excerpt",componentId:"sc-15boh00-5"})(["color:#757575;font-size:15px;",";"],l.BC.sm`
+    font-size: 0.9rem;
+  `);t.Z=e=>o.createElement(r,{to:e.data.path},o.createElement("div",null,o.createElement(m,null,o.createElement(n.G,{alt:`${e.data.title} image`,image:e.data.thumbnail})),o.createElement(p,null,o.createElement(s,null,e.data.title),o.createElement(c,null,o.createElement("time",{dateTime:"2008-02-14 20:00"},e.data.date," "),"· ",e.data.timeToRead," min read"),o.createElement(g,null,e.data.excerpt))))},1130:function(e,t,a){a.r(t);var i=a(7361),n=a.n(i),o=a(7294),d=a(9),l=a(5212),r=a(476),m=a(3809),p=a(9155);const s=d.ZP.div.withConfig({displayName:"TagsBlogListTemplate__PostsWrapper",componentId:"sc-u9jxc3-0"})(["padding:0 15px;max-width:1060px;margin:0 auto 35px;"]);t.default=e=>{const t=n()(e,"pageContext.tagSlug"),a=n()(e,"pageContext.tags"),i=`${(0,p.B)(a)} - Blog`,d=e.data.allMdx.edges||[],c=e.data.site.siteMetadata.siteUrl;return o.createElement(r.Z,{location:e.location,active:p.L.blog},o.createElement("div",{className:"Blog",style:{marginTop:40}},o.createElement(m.Z,{title:i,url:`${c}/blog/tags/${t}`}),o.createElement(s,null,d.map((({node:e})=>!!e.frontmatter.published&&o.createElement(l.Z,{data:{title:e.frontmatter.title,thumbnail:e.frontmatter.image.childImageSharp.gatsbyImageData,excerpt:e.frontmatter.description||e.excerpt,date:e.frontmatter.date,path:`/${e.fields.slug}`},key:e.frontmatter.slug}))))))}}}]);
+//# sourceMappingURL=component---src-templates-tags-blog-list-template-tsx-8a3d519293a16f3dcf4e.js.map
