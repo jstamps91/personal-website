@@ -9,7 +9,7 @@ export const useInfo = () => {
     githubStatus: {
       status: 'Life is Good',
       bio: 'Software Engineer',
-      company: '@jstamps91',
+      company: 'jstamps.dev',
       contributions: 253,
     },
     latestCommit: {
