@@ -40,12 +40,12 @@ See complete stack in [StackShare](https://stackshare.io/jstamps-dev/stack)
 
 Install packages
 ```bash
-yarn
+npm install
 ```
 
 And run:
 ```bash
-yarn start
+npm start
 ```
 
 ## 💱 Changelog
