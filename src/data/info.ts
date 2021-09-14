@@ -38,8 +38,8 @@ export const INFO = Object.freeze({
   ],
   socials: {
     github: 'https://github.com/jstamps91',
-    twitter: 'https://twitter.com/jstamps91',
-    linkedin: 'https://linkedin.com/in/jstamps91',
+    twitter: 'https://twitter.com/stamps_dev',
+    linkedin: 'https://linkedin.com/in/jstamps',
     dev: 'https://dev.to/jstamps91',
     instagram: 'https://instagram.com/jstamps91',
   },

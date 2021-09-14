@@ -24,17 +24,17 @@ module.exports = {
       },
       {
         title: 'Linkedin',
-        link: 'https://linkedin.com/in/joshua-stamps',
+        link: 'https://linkedin.com/in/jstamps',
         icon: 'linkedin',
       },
       {
         title: 'StackOverflow',
-        link: 'https://instagram.com/jstamps91',
+        link: 'https://stackoverflow.com/cv/jstamps',
         icon: 'stack-overflow',
       },
       {
         title: 'Goodreads',
-        link: 'https://instagram.com/jstamps91',
+        link: 'https://www.goodreads.com/user/show/140230151-joshua-stamps',
         icon: 'instagram',
       },
       {
