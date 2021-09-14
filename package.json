@@ -60,7 +60,6 @@
     "gatsby-transformer-yaml": "^3.13.0",
     "javascript-time-ago": "^2.3.8",
     "lodash": "^4.17.21",
-    "node-sass": "^6.0.1",
     "object-merge-advanced": "^13.0.1",
     "prismjs": "^1.24.1",
     "prop-types": "^15.7.2",
