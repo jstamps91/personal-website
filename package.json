@@ -60,6 +60,7 @@
     "gatsby-transformer-yaml": "^3.13.0",
     "javascript-time-ago": "^2.3.8",
     "lodash": "^4.17.21",
+    "node-sass": "^6.0.1",
     "object-merge-advanced": "^13.0.1",
     "prismjs": "^1.24.1",
     "prop-types": "^15.7.2",
@@ -69,9 +70,11 @@
     "react-helmet": "^6.1.0",
     "react-slick": "^0.28.1",
     "react-typography": "^0.16.20",
+    "sass-loader": "^12.1.0",
     "styled-components": "^5.3.1",
     "sweetalert2": "^11.1.5",
-    "typography": "^0.16.21"
+    "typography": "^0.16.21",
+    "webpack": "^5.52.1"
   },
   "devDependencies": {
     "@types/node": "^16.9.1",

@@ -1,5 +1,5 @@
 require('dotenv').config()
-const aboutData = require('./config')
+const aboutData = require('./about')
 
 module.exports = {
   pathPrefix: `/`,
@@ -11,6 +11,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require('node-sass'),
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -49,7 +55,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embed-gist',
             options: {
-              username: 'dantehemerson',
+              username: 'jstamps91',
               includeDefaultCss: true,
             },
           },
