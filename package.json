@@ -8,6 +8,11 @@
     "portfolio",
     "blog"
   ],
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
   "scripts": {
     "create": "node ./scripts/cms.js --interactive",
     "start": "gatsby develop",
