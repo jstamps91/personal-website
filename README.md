@@ -12,7 +12,7 @@ Deployed at: https://jstamps.dev
 
 ## Commands
 
-* `yarn create`.- Launch an interactive CLI to help to create a new blog post.
+* `npm run create`.- Launch an interactive CLI to help to create a new blog post.
 
 ## 💪 Powered by:
 

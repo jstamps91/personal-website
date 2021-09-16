@@ -76,11 +76,13 @@ export default props => {
         ))}
       </Social>
       <Copy>
-        <span className="copytext">© {new Date().getFullYear()} - All rights reserved.</span> Built
-        by{' '}
+      <br/>
+        <span className="copytext"> </span>
+          Designed and built by {" "}
         <Link to="/#about-me" target="_blank" rel="noopener">
           {title}
         </Link>
+          <br/> There are many imitations, but this one is mine.
       </Copy>
     </Container>
   )

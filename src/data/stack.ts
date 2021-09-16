@@ -1,24 +1,24 @@
 const type = [
-  'Database',
-  'Language',
-  'Web Server',
-  'Javascript UI Library',
+  'Database', // 0
+  'Language', // 1
+  'Web Server', // 2
+  'Javascript UI Library', // 3
   'Cloud Hosting',
   'CSS Pre-processor',
   'Operating System',
-  'Platform as a Service',
+  'Platform as a Service', // 7
   'Framework (Full Stack)',
   'Realtime Backend/API',
-  'Microframework (Backend)',
+  'Microframework (Backend)', //10
   'Version Control System',
   'Code Collaboration & VCS',
   'Integrated Development Environment',
   'Virtual Machine Platforms and containers',
-  'Text Editor',
+  'Text Editor', //15
   'Infrastructure as a service',
   'Continuous Integration',
   'JS Build Tool/JS Task Runner',
-  'Javascript Compiler',
+  'Javascript Compiler', // 19
   'JS Testing Framework',
   'Project Management',
   'Group Chat & Notifications',
@@ -32,6 +32,7 @@ const type = [
   'Static Web Hosting', //30
   'JavaScript Framework Components', // 31,
   'Cross-Platform Mobile Development', // 32
+  'Java Framework', 
 ]
 
 const groups = [
@@ -69,19 +70,19 @@ const groups = [
         about:
           'Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.',
       },
-      // {
-      //   url: 'https://google.com',
-      //   name: 'Go',
-      //   icon: 'go.svg',
-      //   type: type[1],
-      //   about:
-      //     'An open source programming language that makes it easy to build simple, reliable, and efficient software',
-      // },
     ],
   },
   {
     title: 'Frameworks & Utilities',
     items: [
+      {
+        url: 'https://spring.io/',
+        name: 'Spring',
+        icon: 'spring-framework.svg',
+        type: type[33],
+        about:
+          'Popular java framework focused on simplicity, speed, and productivity.',
+      },
       {
         url: 'https://rxjs.dev/',
         name: 'RxJS',
@@ -91,7 +92,7 @@ const groups = [
           'The Reactive Extensions for JavaScript is a library for reactive programming using Observables.',
       },
       {
-        url: 'https://google.com',
+        url: 'https://www.atlassian.com/software/jira',
         name: 'Jira',
         icon: 'jira.svg',
         type: type[20],
@@ -99,7 +100,7 @@ const groups = [
           'An issue tracking product developed by Atlassian that allows bug tracking and agile project management.',
       },
       {
-        url: 'https://google.com',
+        url: 'http://subversion.apache.org/',
         name: 'Subversion',
         icon: 'subversion.svg',
         type: type[20],
@@ -238,20 +239,12 @@ const groups = [
     title: 'Backend',
     items: [
       {
-        url: 'https://google.com',
+        url: 'https://nodejs.org/',
         name: 'Node',
         icon: 'nodejs-original.svg',
         type: type[8],
         about:
           "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications",
-      },
-      {
-        url: 'https://google.com',
-        name: 'Express',
-        icon: 'express-original.svg',
-        background: 'white',
-        type: type[10],
-        about: 'Infraestructura web rápida, minimalista y flexible para Node.js',
       },
       {
         url: 'http://tomcat.apache.org/',
@@ -261,9 +254,16 @@ const groups = [
         about:
           'Powers numerous large-scale, mission-critical web applications across a diverse range of industries and organizations',
       },
-      //{ url: 'https://google.com', name: 'Django', icon: 'django-original.svg', background: '#003a2b', type: type[8], about: "The Web framework for perfectionists with deadlines" },
+      // { 
+      //   url: 'https://google.com', 
+      //   name: 'Django', 
+      //   icon: 'django-original.svg', 
+      //   background: '#003a2b', 
+      //   type: type[8], 
+      //   about: "The Web framework for perfectionists with deadlines" 
+      // },
       {
-        url: 'https://google.com',
+        url: 'https://www.mysql.com/',
         name: 'MySQL',
         icon: 'mysql-original-wordmark.svg',
         background: 'white',
@@ -278,7 +278,7 @@ const groups = [
         about: 'The database for giant ideas',
       },
       {
-        url: 'https://google.com',
+        url: 'https://www.postgresql.org/',
         name: 'PostgreSQL',
         icon: 'postgresql-original.svg',
         type: type[0],
@@ -286,18 +286,18 @@ const groups = [
       },
       //{ url: 'https://google.com', name: 'Flask', icon: 'flask.jpg', background: 'white', type: type[10], about: "A microframework for Python based on Werkzeug, Jinja 2 and good intentions." },
       {
-        url: 'https://google.com',
+        url: 'https://graphql.org/',
         name: 'GraphQL',
         icon: 'graphql.svg',
         type: type[24],
         about: 'A data query language and runtime',
       },
       {
-        url: 'https://google.com',
+        url: 'https://www.postman.com/',
         name: 'Postman',
         icon: 'postman.svg',
         type: type[7],
-        about: 'API platform for building and using APIs',
+        about: 'Platform for building, testing, and documentation of APIs',
       },
       // {
       //   url: 'https://google.com',
@@ -321,13 +321,12 @@ const groups = [
     title: 'DevOps',
     items: [
       {
-        url: 'https://google.com',
+        url: 'https://www.docker.com/',
         name: 'Docker',
         icon: 'docker.svg',
         background: 'white',
         type: type[14],
-        about:
-          'An open source project to pack, ship and run any application as a lightweight container',
+        about: 'An open source project to pack, ship and run any application as a lightweight container',
       },
       {
         url: 'https://azure.microsoft.com/',
@@ -336,35 +335,26 @@ const groups = [
         type: type[16],
       },
       {
-        url: 'https://google.com',
+        url: 'https://www.heroku.com',
         name: 'Heroku',
         icon: 'heroku.svg',
         type: type[7],
-        about:
-          'Build, deliver, monitor and scale web apps and APIs with a trail blazing developer experience.',
+        about: 'Build, deliver, monitor and scale web apps and APIs with a trail blazing developer experience.',
       },
       {
-        url: 'https://google.com',
+        url: 'https://maven.apache.org/',
         name: 'Apache Maven',
         icon: 'apache-original-wordmark.svg',
         background: 'white',
         type: type[2],
       },
       {
-        url: 'https://google.com',
-        name: 'Travis CI',
-        icon: 'travis.svg',
-        type: type[17],
-        about: 'A hosted continuous integration service for open source and private projects',
-      },
-      {
-        url: 'https://google.com',
+        url: 'https://circleci.com',
         name: 'Circle CI',
         icon: 'circleci.svg',
         background: 'white',
         type: type[17],
-        about:
-          'CircleCI’s continuous integration and delivery platform helps software teams rapidly release code with confidence.',
+        about: 'CircleCI’s continuous integration and delivery platform helps software teams rapidly release code with confidence.',
       },
       {
         url: 'https://google.com',
