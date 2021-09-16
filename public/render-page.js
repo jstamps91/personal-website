@@ -1,6 +1,44 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
+  \*****************************************************************/
+/***/ ((module) => {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+module.exports = _arrayLikeToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
+  \******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+}
+
+module.exports = _arrayWithoutHoles;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/assertThisInitialized.js ***!
@@ -112,6 +150,36 @@ module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/iterableToArray.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
+  \****************************************************************/
+/***/ ((module) => {
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+
+module.exports = _iterableToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/nonIterableSpread.js ***!
+  \******************************************************************/
+/***/ ((module) => {
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+module.exports = _nonIterableSpread;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js":
 /*!************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js ***!
@@ -187,6 +255,51 @@ function _setPrototypeOf(o, p) {
 }
 
 module.exports = _setPrototypeOf;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/toConsumableArray.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
+  \******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js");
+
+var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ "./node_modules/@babel/runtime/helpers/iterableToArray.js");
+
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
+
+var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js");
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
+  \***************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+
+module.exports = _unsupportedIterableToArray;
 module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
@@ -5073,10 +5186,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
-/* harmony import */ var _hooks_useSiteMetadata__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks/useSiteMetadata */ "./src/hooks/useSiteMetadata.tsx");
-//import ReactDisqusComments from 'react-disqus-comments'
-const Container=styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({displayName:"Disqus__Container",componentId:"sc-1r4gzyf-0"})(["max-width:800px;margin-left:auto;margin-right:auto;padding-left:12px;padding-right:12px;"]);const Disqus=({title,path})=>{const{siteMetadata:{disqusShortname,siteUrl}}=(0,_hooks_useSiteMetadata__WEBPACK_IMPORTED_MODULE_2__.useSiteMetadata)();const url=`${siteUrl}/${path}`;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Container,null);};Disqus.propTypes={title:(prop_types__WEBPACK_IMPORTED_MODULE_0___default().string.isRequired),path:(prop_types__WEBPACK_IMPORTED_MODULE_0___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Disqus);
+/* harmony import */ var gatsby_plugin_disqus__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-plugin-disqus */ "./node_modules/gatsby-plugin-disqus/index.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _hooks_useSiteMetadata__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../hooks/useSiteMetadata */ "./src/hooks/useSiteMetadata.tsx");
+const Container=styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({displayName:"Disqus__Container",componentId:"sc-1r4gzyf-0"})(["max-width:800px;margin-left:auto;margin-right:auto;padding-left:12px;padding-right:12px;"]);const Disqus=({title,path})=>{const{siteMetadata:{disqusShortname,siteUrl}}=(0,_hooks_useSiteMetadata__WEBPACK_IMPORTED_MODULE_3__.useSiteMetadata)();const url=`${siteUrl}/${path}`;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(Container,null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby_plugin_disqus__WEBPACK_IMPORTED_MODULE_2__["default"],{shortname:disqusShortname,identifier:path,title:title,url:url}));};Disqus.propTypes={title:(prop_types__WEBPACK_IMPORTED_MODULE_0___default().string.isRequired),path:(prop_types__WEBPACK_IMPORTED_MODULE_0___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Disqus);
 
 /***/ }),
 
@@ -6054,6 +6167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _useLocalStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useLocalStorage */ "./src/hooks/useLocalStorage.tsx");
 /* harmony import */ var _utils_requests_githubInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/requests/githubInfo */ "./src/utils/requests/githubInfo.ts");
+/* harmony import */ var _utils_requests_githubInfo__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_utils_requests_githubInfo__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var object_merge_advanced__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! object-merge-advanced */ "./node_modules/object-merge-advanced/dist/object-merge-advanced.esm.js");
 const useInfo=()=>{const[info,setInfo]=(0,_useLocalStorage__WEBPACK_IMPORTED_MODULE_2__.useLocalStorage)('info',{githubStatus:{status:'Life is Good',bio:'Software Engineer',company:'jstamps.dev',contributions:253},latestCommit:{message:'Adds API integration with graphQL data',createdAt:'2021-08-19T16:38:10Z',url:'https://github.com/jstamps91/jstamps.dev-api'},listening:{name:"Where We're Going",artist:'Hans Zimmer',album:'Interstellar (Original Motion Picture Soundtrack)',url:'https://www.last.fm/music/Hans+Zimmer/_/Where+We%27re+Going',image:'https://lastfm.freetls.fastly.net/i/u/300x300/b8365c64bec38d1f0d05d9c1367a8cb3.jpg',playing:false,scrobbles:'105',lastPlayingDate:'2021-08-16T02:20:44.000Z'},reading:{title:"I'm 52% done with The Pragmatic Programmer",updatedAt:'2021-02-16T04:53:13.000Z',url:'https://www.goodreads.com/review/list/140230151?shelf=currently-reading',profileUrl:'https://www.goodreads.com/user/show/140230151-joshua-stamps'}});(0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{const setGithubInfo=async()=>{try{const newInfo=await (0,_utils_requests_githubInfo__WEBPACK_IMPORTED_MODULE_3__.getMyGithubInfo)();setInfo(prevInfo=>(0,object_merge_advanced__WEBPACK_IMPORTED_MODULE_4__.mergeAdvanced)(prevInfo,newInfo,{mergeBoolsUsingOrNotAnd:lodash_get__WEBPACK_IMPORTED_MODULE_0___default()(newInfo,'listening.playing',false)}));}catch(err){}};setGithubInfo();// eslint-disable-next-line react-hooks/exhaustive-deps
 },[]);return info;};
@@ -6412,44 +6526,55 @@ const pages={home:'',blog:'Blog',about:'About',portfolio:'Portfolio',contact:'Co
 /*!******************************************!*\
   !*** ./src/utils/requests/githubInfo.ts ***!
   \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getMyGithubInfo": () => (/* binding */ getMyGithubInfo)
-/* harmony export */ });
-const getMyGithubInfo=async()=>{try{const res=await fetch('https://jstamps-api.azurewebsites.net',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query:`
-        {
-          githubStatus {
-            status
-            updatedAt
-            bio
-            company
-            contributions
-          }
-          latestCommit {
-            message
-            createdAt
-            url
-          }
-          listening {
-            name
-            artist
-            album
-            url
-            image
-            playing
-            scrobbles
-            lastPlayingDate
-          }
-          reading {
-            title
-            updatedAt
-            url
-            profileUrl
-          }
-        }`})});const json=await res.json();return json.data;}catch(err){console.log('Error: ',err);}};
+// export const getMyGithubInfo = async () => {
+//   try {
+//     const res = await fetch('https://jstamps-api.azurewebsites.net', {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify({
+//         query: `
+//         {
+//           githubStatus {
+//             status
+//             updatedAt
+//             bio
+//             company
+//             contributions
+//           }
+//           latestCommit {
+//             message
+//             createdAt
+//             url
+//           }
+//           listening {
+//             name
+//             artist
+//             album
+//             url
+//             image
+//             playing
+//             scrobbles
+//             lastPlayingDate
+//           }
+//           reading {
+//             title
+//             updatedAt
+//             url
+//             profileUrl
+//           }
+//         }`,
+//       }),
+//     })
+//     const json = await res.json()
+//     return json.data
+//   } catch (err) {
+//     console.log('Error: ', err)
+//   }
+// }
 
 /***/ }),
 
@@ -7077,6 +7202,118 @@ __webpack_require__.r(__webpack_exports__);
  * Remove a prefix from a string. Return the input string if the given prefix
  * isn't found.
  */function stripPrefix(str,prefix=``){if(!prefix){return str;}if(str===prefix){return`/`;}if(str.startsWith(`${prefix}/`)){return str.slice(prefix.length);}return str;}
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-disqus/components/CommentCount.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-disqus/components/CommentCount.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");exports.__esModule=true;exports["default"]=void 0;var _extends2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));var _objectWithoutPropertiesLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"));var _inheritsLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "react"));var _propTypes=_interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));var _utils=__webpack_require__(/*! ../utils */ "./node_modules/gatsby-plugin-disqus/utils.js");var queueResetCount=(0,_utils.debounce)(function(){if(window.DISQUSWIDGETS){window.DISQUSWIDGETS.getCount({reset:true});}},300,false);var CommentCount=/*#__PURE__*/function(_React$Component){(0,_inheritsLoose2.default)(CommentCount,_React$Component);function CommentCount(props){var _this;_this=_React$Component.call(this,props)||this;_this.shortname= true?"jstamps":0;return _this;}var _proto=CommentCount.prototype;_proto.componentDidMount=function componentDidMount(){this.loadInstance();};_proto.shouldComponentUpdate=function shouldComponentUpdate(nextProps){if(this.props===nextProps){return false;}return(0,_utils.shallowComparison)(this.props,nextProps);};_proto.componentDidUpdate=function componentDidUpdate(){this.loadInstance();};_proto.componentWillUnmount=function componentWillUnmount(){this.cleanInstance();};_proto.loadInstance=function loadInstance(){if(window.document.getElementById('dsq-count-scr')){queueResetCount();}else{(0,_utils.insertScript)("https://"+this.shortname+".disqus.com/count.js",'dsq-count-scr',window.document.body);}};_proto.cleanInstance=function cleanInstance(){(0,_utils.removeScript)('dsq-count-scr',window.document.body);window.DISQUSWIDGETS=undefined;};_proto.render=function render(){var _this$props=this.props,config=_this$props.config,className=_this$props.className,placeholder=_this$props.placeholder,props=(0,_objectWithoutPropertiesLoose2.default)(_this$props,["config","className","placeholder"]);var componentClass="disqus-comment-count"+(className?" "+className:'');return/*#__PURE__*/_react.default.createElement("span",(0,_extends2.default)({className:componentClass,"data-disqus-identifier":config.identifier,"data-disqus-url":config.url},props),placeholder);};return CommentCount;}(_react.default.Component);exports["default"]=CommentCount;CommentCount.defaultProps={placeholder:'...'};CommentCount.propTypes={config:_propTypes.default.shape({/*
+    * Tells the Disqus service how to identify the current page.
+    * When the Disqus embed is loaded, the identifier is used to look up
+    * the correct thread.
+    */identifier:_propTypes.default.string,/*
+    * Tells the Disqus service the title of the current page.
+    * This is used when creating the thread on Disqus.
+    */title:_propTypes.default.string,/*
+    * Tells the Disqus service the URL of the current page.
+    * This URL is used when a thread is created so that Disqus knows which
+    * page a thread belongs to.
+    * (If undefined, Disqus will use the global.location.href)
+    */url:_propTypes.default.string}),/*
+  * This is the text that will be used as a placeholder prior to
+  * loading the response.
+  */placeholder:_propTypes.default.string,/*
+  * This allows users to pass a custom class to the comment-count component
+  */className:_propTypes.default.string};
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-disqus/components/CommentEmbed.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-disqus/components/CommentEmbed.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");exports.__esModule=true;exports["default"]=void 0;var _extends2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));var _objectWithoutPropertiesLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"));var _inheritsLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "react"));var _propTypes=_interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));var CommentEmbed=/*#__PURE__*/function(_React$Component){(0,_inheritsLoose2.default)(CommentEmbed,_React$Component);function CommentEmbed(){return _React$Component.apply(this,arguments)||this;}var _proto=CommentEmbed.prototype;_proto.getSrc=function getSrc(){var RADIX_BASE=36;var post=Number(this.props.commentId).toString(RADIX_BASE);var parentParam=this.props.showParentComment?'1':'0';var mediaParam=this.props.showMedia?'1':'0';return"https://embed.disqus.com/p/"+post+"?p="+parentParam+"&m="+mediaParam;};_proto.render=function render(){// eslint-disable-next-line no-unused-vars
+var _this$props=this.props,commentId=_this$props.commentId,showMedia=_this$props.showMedia,showParentComment=_this$props.showParentComment,props=(0,_objectWithoutPropertiesLoose2.default)(_this$props,["commentId","showMedia","showParentComment"]);return/*#__PURE__*/_react.default.createElement("iframe",(0,_extends2.default)({src:this.getSrc(),width:this.props.width,height:this.props.height,seamless:"seamless",scrolling:"no",frameBorder:"0",title:"embedded-comment"},props));};return CommentEmbed;}(_react.default.Component);exports["default"]=CommentEmbed;CommentEmbed.defaultProps={width:420,height:320,showMedia:true,showParentComment:true};CommentEmbed.propTypes={/*
+   * This is used to determine the comment that gets embeded.
+   * The ID can be found in the Disqus moderation panel or as a `data-post-id`
+   * attribute on the HTML element.
+   */commentId:_propTypes.default.oneOfType([_propTypes.default.number,_propTypes.default.string]).isRequired,/*
+   * Determines the width of the embedded comment container.
+   */width:_propTypes.default.number,/*
+   * Determines the height of the embedded comment container.
+   */height:_propTypes.default.number,/*
+   * Determines whether the embedded comment should include or omit media from
+   * within the original comment.
+   */showMedia:_propTypes.default.bool,/*
+   * Determines whether the parent comment should be displayed for * nested comments.
+   */showParentComment:_propTypes.default.bool};
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-disqus/components/Disqus.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-disqus/components/Disqus.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");exports.__esModule=true;exports["default"]=void 0;var _extends2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));var _objectWithoutPropertiesLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"));var _inheritsLoose2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "react"));var _propTypes=_interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));var _utils=__webpack_require__(/*! ../utils */ "./node_modules/gatsby-plugin-disqus/utils.js");var Disqus=/*#__PURE__*/function(_React$Component){(0,_inheritsLoose2.default)(Disqus,_React$Component);function Disqus(props){var _this;_this=_React$Component.call(this,props)||this;_this.shortname= true?"jstamps":0;_this.embedUrl="https://"+_this.shortname+".disqus.com/embed.js";return _this;}var _proto=Disqus.prototype;_proto.componentDidMount=function componentDidMount(){this.loadInstance();};_proto.shouldComponentUpdate=function shouldComponentUpdate(nextProps){if(this.props===nextProps){return false;}return(0,_utils.shallowComparison)(this.props,nextProps);};_proto.componentDidUpdate=function componentDidUpdate(){this.loadInstance();};_proto.componentWillUnmount=function componentWillUnmount(){this.cleanInstance();};_proto.getDisqusConfig=function getDisqusConfig(config){return function(){this.page.identifier=config.identifier;this.page.url=config.url;this.page.title=config.title;this.page.remote_auth_s3=config.remoteAuthS3;this.page.api_key=config.apiKey;this.language=config.language;};};_proto.loadInstance=function loadInstance(){if(typeof window!=='undefined'&&window.document){window.disqus_config=this.getDisqusConfig(this.props.config);if(window.document.getElementById('dsq-embed-scr')){this.reloadInstance();}else{(0,_utils.insertScript)(this.embedUrl,'dsq-embed-scr',window.document.body);}}};_proto.reloadInstance=function reloadInstance(){if(window&&window.DISQUS){window.DISQUS.reset({reload:true});}};_proto.cleanInstance=function cleanInstance(){(0,_utils.removeScript)('dsq-embed-scr',window.document.body);try{delete window.DISQUS;}catch(error){window.DISQUS=undefined;}var thread=window.document.getElementById('disqus_thread');if(thread){while(thread.hasChildNodes()){thread.removeChild(thread.firstChild);}}// Retrieve and remove the sidebar iframe
+var iframeQuery=window.document.querySelector('[id^="dsq-app"]');if(iframeQuery){var iframe=window.document.getElementById(iframeQuery.id);iframe.parentNode.removeChild(iframe);}};_proto.render=function render(){// eslint-disable-next-line no-unused-vars
+var _this$props=this.props,config=_this$props.config,props=(0,_objectWithoutPropertiesLoose2.default)(_this$props,["config"]);return/*#__PURE__*/_react.default.createElement("div",(0,_extends2.default)({id:"disqus_thread"},props));};return Disqus;}(_react.default.Component);exports["default"]=Disqus;Disqus.propTypes={config:_propTypes.default.shape({/*
+    * Tells the Disqus service how to identify the current page.
+    * When the Disqus embed is loaded, the identifier is used to look up
+    * the correct thread.
+    */identifier:_propTypes.default.string,/*
+    * Tells the Disqus service the title of the current page.
+    * This is used when creating the thread on Disqus.
+    */title:_propTypes.default.string,/*
+    * Tells the Disqus service the URL of the current page.
+    * This URL is used when a thread is created so that Disqus knows which
+    * page a thread belongs to.
+    * (If undefined, Disqus will use the global.location.href)
+    */url:_propTypes.default.string,/*
+    * Tells the Disqus service to override the default site language for the
+    * current page.
+    * This allows for dynamically loading the Disqus embed in different
+    * languages on a per-page basis.
+    * (If undefined, Disqus will use the default site language)
+    */language:_propTypes.default.string,/*
+    The generated payload used to pass Single Sign-On (SSO) user data
+    */remoteAuthS3:_propTypes.default.string,/*
+    * This is the public API key for your Single Sign-On (SSO) integration
+    */apiKey:_propTypes.default.string})};
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-disqus/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/gatsby-plugin-disqus/index.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");exports.__esModule=true;exports["default"]=void 0;var _Disqus=_interopRequireDefault(__webpack_require__(/*! ./components/Disqus */ "./node_modules/gatsby-plugin-disqus/components/Disqus.js"));exports.Disqus=_Disqus.default;var _CommentCount=_interopRequireDefault(__webpack_require__(/*! ./components/CommentCount */ "./node_modules/gatsby-plugin-disqus/components/CommentCount.js"));exports.CommentCount=_CommentCount.default;var _CommentEmbed=_interopRequireDefault(__webpack_require__(/*! ./components/CommentEmbed */ "./node_modules/gatsby-plugin-disqus/components/CommentEmbed.js"));exports.CommentEmbed=_CommentEmbed.default;var _default=_Disqus.default;exports["default"]=_default;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-disqus/utils.js":
+/*!****************************************************!*\
+  !*** ./node_modules/gatsby-plugin-disqus/utils.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+var _interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");exports.__esModule=true;exports.insertScript=insertScript;exports.removeScript=removeScript;exports.debounce=debounce;exports.isReactElement=isReactElement;exports.shallowComparison=shallowComparison;var _toConsumableArray2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js"));var _react=_interopRequireDefault(__webpack_require__(/*! react */ "react"));function insertScript(src,id,parent){var script=window.document.createElement('script');script.async=true;script.src=src;script.id=id;parent.appendChild(script);return script;}function removeScript(id,parent){var script=window.document.getElementById(id);if(script){parent.removeChild(script);}}function debounce(func,wait,runOnFirstCall){var timeout;return function(){for(var _len=arguments.length,args=new Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}var context=this;var deferredExecution=function deferredExecution(){timeout=null;if(!runOnFirstCall){func.apply(context,args);}};var callNow=runOnFirstCall&&!timeout;window.clearTimeout(timeout);timeout=setTimeout(deferredExecution,wait);if(callNow){func.apply(context,args);}};}function isReactElement(element){if(/*#__PURE__*/_react.default.isValidElement(element)){return true;}else if(Array.isArray(element)){return element.some(function(value){return/*#__PURE__*/_react.default.isValidElement(value);});}return false;}function shallowComparison(currentProps,nextProps){var _ref;// Perform a comparison of all props, excluding React Elements, to prevent
+// unnecessary updates
+var propNames=new Set(Object.keys(currentProps).concat(Object.keys(nextProps)));var changes=(_ref=[]).concat.apply(_ref,(0,_toConsumableArray2.default)(propNames)).filter(function(name){if(typeof currentProps[name]==='object'){if(shallowComparison(currentProps[name],nextProps[name])){return true;}}else if(currentProps[name]!==nextProps[name]&&!isReactElement(currentProps[name])){return true;}return false;});return changes.length!==0;}
 
 /***/ }),
 
@@ -48669,7 +48906,7 @@ module.exports = JSON.parse('{"locale":"en","long":{"year":{"previous":"last yea
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"polyfill":["/polyfill-da5ad411ff6f8b5d4dcb.js"],"app":["/app-c4c071f1d5eb054bf121.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-f97ad7d830cfcabb74ef.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-43dc13906e63671afafc.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-ec940ace107cffd16690.js"],"component---src-pages-portfolio-tsx":["/component---src-pages-portfolio-tsx-cd25c8cea5ae9ede7119.js"],"component---src-templates-blog-list-template-tsx":["/component---src-templates-blog-list-template-tsx-865a2c052f0ec123d4f9.js"],"component---src-templates-post-template-tsx":["/component---src-templates-post-template-tsx-0c41cd9462b288b86338.js"],"component---src-templates-project-template-tsx":["/component---src-templates-project-template-tsx-3e62d9f830a1aee950e3.js"],"component---src-templates-tags-blog-list-template-tsx":["/component---src-templates-tags-blog-list-template-tsx-8a3d519293a16f3dcf4e.js"]}');
+module.exports = JSON.parse('{"polyfill":["/polyfill-da5ad411ff6f8b5d4dcb.js"],"app":["/app-2bad0f2fe1dfd09e95ca.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-f97ad7d830cfcabb74ef.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-43dc13906e63671afafc.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-50d8c115ebb06225a739.js"],"component---src-pages-portfolio-tsx":["/component---src-pages-portfolio-tsx-cd25c8cea5ae9ede7119.js"],"component---src-templates-blog-list-template-tsx":["/component---src-templates-blog-list-template-tsx-865a2c052f0ec123d4f9.js"],"component---src-templates-post-template-tsx":["/component---src-templates-post-template-tsx-952d64d8f2306d9af20c.js"],"component---src-templates-project-template-tsx":["/component---src-templates-project-template-tsx-a24d0488833af9827208.js"],"component---src-templates-tags-blog-list-template-tsx":["/component---src-templates-tags-blog-list-template-tsx-8a3d519293a16f3dcf4e.js"]}');
 
 /***/ })
 

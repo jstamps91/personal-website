@@ -6,7 +6,7 @@ description: >-
 author: JStamps
 pathPrefix: blog
 slug: basic-redux-concepts
-image: ../images/redux-basic-concepts.png
+image: ../images/basic-redux-concepts.png
 date: '2021-07-17T09:56:23-05:00'
 published: true
 tags:

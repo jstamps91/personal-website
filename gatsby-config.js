@@ -18,6 +18,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `jstamps`
+      }
+  },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
