@@ -4,6 +4,7 @@ export const getMyGithubInfo = async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
       },
       body: JSON.stringify({
         query: `
@@ -33,8 +34,7 @@ export const getMyGithubInfo = async () => {
           reading {
             title
             updatedAt
-            url
-            profileUrl
+            url          
           }
         }`,
       }),

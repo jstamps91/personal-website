@@ -22,12 +22,10 @@ const Layout = props => {
         <meta name="p:domain_verify" content="c397688e54fbd5c1a5dc40a1db9b809f" />
       </Helmet>
       <ThemeProvider theme={defaultTheme}>
-        <>
-          <GlobalStyles />
+        <GlobalStyles />
           <Navbar active={active} />
-          <div className="Dyamic-container">{children}</div>
-          {!simple && <Footer />}
-        </>
+            <div className="Dyamic-container">{children}</div>
+            {!simple && <Footer />}
       </ThemeProvider>
     </>
   )
