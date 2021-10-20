@@ -13,7 +13,7 @@ tags:
    - Cloudinary
    - Sourcegraph
    - Insomnia
-   =devTools
+   - DevTools
 ---
 
 Posted on Sep 28
