@@ -9,6 +9,7 @@ module.exports = {
     'Mdx.frontmatter.author': `AuthorYaml`,
   },
   plugins: [
+    'gatsby-plugin-netlify',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     {
